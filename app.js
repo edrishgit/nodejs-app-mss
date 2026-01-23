@@ -85,8 +85,9 @@ app.get('/redirect', function(req, res) {
     });
     
  app.listen(app.get('port'), '0.0.0.0', function() {
-    console.log("Node JS app is running at http://<your-EC2-public-IP>:" + app.get('port') + "/mithuntechnologies");
-      })
+    console.log("Node JS app is running at http://13.201.185.217:" + app.get('port') + "/mithuntechnologies");
+})
+
     
 
 
