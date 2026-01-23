@@ -84,9 +84,8 @@ app.get('/redirect', function(req, res) {
         res.redirect('http://mithuntechnologies.com');
     });
     
- 
-    app.listen(app.get('port'), function() {
-        console.log("Node JS app is running at http://localhost:" + app.get('port') +"/mithuntechnologies");
+ app.listen(app.get('port'), '0.0.0.0', function() {
+    console.log("Node JS app is running at http://<your-EC2-public-IP>:" + app.get('port') + "/mithuntechnologies");
       })
     
 
